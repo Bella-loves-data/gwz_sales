@@ -1,4 +1,5 @@
 SELECT
 date_date
 ,turnover
-FROM  
+,purchase_cost
+FROM gwz_sales;
