@@ -1,5 +1,9 @@
 SELECT
 date_date
-,turnover
-,purchase_cost
-FROM gwz_sales;
+,ROUND(SUM(turnover),2 AS turnover
+,ROUND(SUM(purchase_cost),2 AS purchase_cost
+FROM gwz_sales
+GROUP BY date_date
+ORDER BY date_date;
+
+
